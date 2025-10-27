@@ -1,0 +1,7 @@
+config:
+  aws:region: us-east-1
+  aws-autoscaling-stress:instanceType: t3.micro
+  aws-autoscaling-stress:minSize: 1
+  aws-autoscaling-stress:maxSize: 3
+  aws-autoscaling-stress:desiredCapacity: 1
+  aws-autoscaling-stress:vpcCidr: "10.0.0.0/16"

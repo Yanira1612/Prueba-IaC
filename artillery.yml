@@ -1,0 +1,9 @@
+config:
+  target: "http://web-alb-999ca0b-15804153.us-east-1.elb.amazonaws.com"
+  phases:
+    - duration: 300  # 5 minutos
+      arrivalRate: 10  # 10 usuarios por segundo
+scenarios:
+  - flow:
+      - get:
+          url: "/"
